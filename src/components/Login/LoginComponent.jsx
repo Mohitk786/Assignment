@@ -103,6 +103,11 @@ const LoginComponent = ({logIn}) => {
               >
                 Login
               </Button>
+              <div>
+                <p>Sample Email: test@gmail.com</p>
+                <p>Sample password: 12345678</p>
+                <p>Note: Sign up button is not funciotnal (just for UI)</p>
+              </div>
             </Form.Item>
           </Form>
         </Col>
