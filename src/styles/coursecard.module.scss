@@ -1,0 +1,52 @@
+@import './variables.scss';
+.coursecardrow{
+    @include between-flexbox;
+    align-items:flex-start;
+}
+.courselistcard{
+    box-shadow: rgba(0, 150, 255, 0.2) 0px 7px 20px 0px;
+}
+.coursedetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.courseheading{
+    @include between-flexbox;
+    flex-direction: row;
+    width: 100%;
+    font-family: 'Roboto';
+}
+.coursename{
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 10px;
+    font-family: 'Roboto';
+}
+.courseinstructor{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.courseattendants{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.markascompletebuttondiv{
+    @include center-flexbox;
+}
+@media(max-width:$mobile-screen){
+    .courseheading{
+        flex-direction: column;
+        align-items: start;
+    }
+    .markascompletebuttondiv{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .coursename{
+        font-size: 14px;
+    }
+}
+

@@ -1,0 +1,25 @@
+@import './variables.scss';
+.navbar{
+    box-shadow: 0px 8px 10px -10px rgba(0, 118, 250, 0.5);
+    width: 100vw;
+    @include center-flexbox;
+    justify-content: space-between;
+}
+.navbaravatar{
+    margin-right: 80px;
+}
+@media (max-width:$tablet-screen) {
+    .navbaravatar{
+        margin-right: 20px;
+    }
+}
+.logoutoption{
+    color: red;
+    cursor: pointer;
+}
+.mycoursesoption{
+    color:black;
+}
+.mycoursesoption:hover{
+    color: brown;
+}
